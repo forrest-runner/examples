@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: Hello world
         run: echo "Hi from Forrest on Debian!"
+      - run: ip -6 a
+      - run: ip -6 r
+      - run: wget -O - -6 http://mirror.stw.pengutronix.de/debian || true
+      - run: wget -O - -4 http://mirror.stw.pengutronix.de/debian || true
+      - run: wget -O - -6 https://google.com || true
+      - run: wget -O - -4 https://google.com || true
