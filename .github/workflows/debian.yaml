@@ -1,0 +1,11 @@
+name: Run on Debian
+
+on: [push, pull_request]
+
+jobs:
+  base:
+    name: Base
+    runs-on: [self-hosted, forrest, test-debian]
+    steps:
+      - name: Hello world
+        run: echo "Hi from Forrest on Debian!"

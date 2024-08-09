@@ -17,3 +17,4 @@ If these words do not make sense to you, you should start your journey there.
 There are jobs that …
 
 - [… run on Arch Linux](.github/workflows/arch.yaml)
+- [… run on Debian](.github/workflows/debian.yaml)
