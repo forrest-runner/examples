@@ -1,0 +1,11 @@
+name: Run on Arch
+
+on: [push, pull_request]
+
+jobs:
+  base:
+    name: Base
+    runs-on: [self-hosted, forrest, test-arch]
+    steps:
+      - name: Hello world
+        run: echo "Hi from Forrest on Arch!"
