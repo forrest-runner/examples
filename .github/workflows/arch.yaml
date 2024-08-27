@@ -1,6 +1,6 @@
 name: Run on Arch
 
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   base:
